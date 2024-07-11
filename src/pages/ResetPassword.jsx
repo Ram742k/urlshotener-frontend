@@ -19,6 +19,14 @@ const ResetPassword = () => {
     try {
         await resetPassword (token, password);
         setMessage('Password reset successfully. Please log in.');
+
+        // Clear the form fields
+         setPassword('');
+            setConfirmPassword('');
+            
+        // Redirect to the login page after successful password reset
+        window.location.href = '/';
+        
         
     } catch (error) {
           setError('Failed to reset password. Please try again.');
@@ -50,6 +58,7 @@ const ResetPassword = () => {
                             </div>
                             
                             <button type='submit' className='btn btn-primary btn-block mt-3'>Reset Password</button>
+                            <p className='text-danger text-center mt-3'>{message}</p>
                         </form>
                     </div>
                 </div>
