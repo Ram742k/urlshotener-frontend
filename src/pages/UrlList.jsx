@@ -70,7 +70,7 @@ const Dashboard = () => {
         <tbody>
           {urlStats.map((url) => (
             <tr key={url._id}>
-              <td><a href={`https://incandescent-otter-95ca8c.netlify.app/api/url/${url.urlCode}`} target="_blank" rel="noopener noreferrer">{url.urlCode}</a></td>
+              <td><a href={`https://urlshortener-backend-e965.onrender.com/api/url/${url.urlCode}`} target="_blank" rel="noopener noreferrer">{url.urlCode}</a></td>
               <td>{url.longUrl}</td>
               <td>{new Date(url.date).toLocaleDateString()}</td>
               <td>{url.clicks}</td>
