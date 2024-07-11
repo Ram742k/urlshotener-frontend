@@ -23,7 +23,6 @@ ChartJS.register(
 
 const Dashboard = () => {
   const [urlStats, setUrlStats] = useState([]);
-  const [urlCodes, setUrlCodes] = useState([]);
   console.log(urlStats);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState('');
@@ -63,7 +62,7 @@ const Dashboard = () => {
     return <div style={{ color: 'red' }}>{error}</div>;
   }
   const data = {
-    labels: urlStats.map(url => url.urlCodes),
+    labels: urlStats.map(url => url.urlCode),
     datasets: [{
         label: 'Click Count',
         data: urlStats.map(url => url.clicks),
