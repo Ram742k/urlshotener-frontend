@@ -35,7 +35,11 @@ export const resetPassword = (token, newPassword) => {
 
 //getUrlStats
 export const getUrls = () => {
-    return instance.get(`/url/urls`);
+    return instance.get(`/url/urls/`);
+}
+
+export const redirectUrl = (shortUrl) => {
+    return instance.get(`/url/redirect/${shortUrl}`);
 }
 
 export const createShortUrl = async (longUrl) => {

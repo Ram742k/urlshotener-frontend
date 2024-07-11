@@ -11,7 +11,7 @@ const Dashboard = () => {
   useEffect(() => {
     const fetchUrlStats = async () => {
       try {
-        const response = await getUrls();
+        const response = await redirectUrl();
         setUrlStats(response.data);
         setLoading(false);
       } catch (error) {
@@ -70,7 +70,7 @@ const Dashboard = () => {
         <tbody>
           {urlStats.map((url) => (
             <tr key={url._id}>
-              <td><a href={url.longUrl} target="_blank" rel="noopener noreferrer">{url.urlCode}</a></td>
+              <td><a href={`https://incandescent-otter-95ca8c.netlify.app/${url.urlCode}`} target="_blank" rel="noopener noreferrer">{url.urlCode}</a></td>
               <td>{url.longUrl}</td>
               <td>{new Date(url.date).toLocaleDateString()}</td>
               <td>{url.clicks}</td>
