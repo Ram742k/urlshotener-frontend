@@ -11,7 +11,7 @@ const Dashboard = () => {
   useEffect(() => {
     const fetchUrlStats = async () => {
       try {
-        const response = await redirectUrl();
+        const response = await getUrls();
         setUrlStats(response.data);
         setLoading(false);
       } catch (error) {
