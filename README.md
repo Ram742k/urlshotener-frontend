@@ -100,7 +100,7 @@ This project is a URL shortener service where users can shorten long URLs and ma
       "msg": "Password reset successful"
     }
     ```
-    
+
 ### URL Management
 
 #### Create Short URL
@@ -145,3 +145,9 @@ This project is a URL shortener service where users can shorten long URLs and ma
 ## Environment Variables
 
 Create a `.env` file in the root of your backend project and add the following variables:
+
+# Base URL of your deployed backend application
+BASE_URL=https://urlshortener-backend-e965.onrender.com
+
+# Client URL of your deployed frontend application
+CLIENT_URL=https://incandescent-otter-95ca8c.netlify.app
