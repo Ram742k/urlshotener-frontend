@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+#root {
+  
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+ 
+  overflow: hidden;
+}
+
+.App {
+  margin-top: 5rem;
+  
+}
+.navbar-brand{
+ font-size: 25px !important;
+ font-weight: 400;
+}
+
+body {
+  margin: auto;
+  
+  overflow: auto;
+  background-color: #b4aae7;
+  background-image: linear-gradient(270deg, #bbb0f7 0%, #5548a8 70%, #7c66f8 100%);
+  animation: gradient 15s ease infinite;
+  background-size: 400% 400%;
+  background-attachment: fixed;
+}
+
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+label{
+  font-weight: 500;
+  font-size: 17px;
+}
+
+.table td{
+  padding: 0.5em;
+  vertical-align: middle;
+  font-size: 15px;
+  font-weight: 400;
+}
+.user-card {
+  width: 50%;
+  padding: 2em;
+  margin: 1em;
+  
+  border-radius: 0.5em;
+  background-color: #ffffff;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  overflow: hidden;
+
+  -webkit-border-radius: 0.5em;
+  -moz-border-radius: 0.5em;
+  -ms-border-radius: 0.5em;
+  -o-border-radius: 0.5em;
+}
+.card{
+  border: none !important;
+  padding: 2rem;
+  border-radius: 15px;
+}
+.vh-80{
+  height: 80vh;
+}
+.card-userlist{
+  width: 100%;
+}
+
+@media (max-width: 600px) {
+  .card {
+    width: 100%;
+  }
+}
+
+.read-the-docs {
+  color: #888;
+}
+.nav-item a{
+  list-style: none;
+  display: inline-block;
+  padding: 0.2em;
+  margin: 0 1em;
+  font-size: 1em;
+  font-weight: 400;
+  color: #27272b;
+  text-decoration: none !important;
+  cursor: pointer;
+
+}
+p{
+    font-size: 15px !important;
+    font-weight: 400;
+}
+.loader{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    height: 100vh;
+    background: #fff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 9999;
+}
