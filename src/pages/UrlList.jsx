@@ -70,7 +70,7 @@ const Dashboard = () => {
         <tbody>
           {urlStats.map((url) => (
             <tr key={url._id}>
-              <td><a href={url.shortUrl} target="_blank" rel="noopener noreferrer">{url.urlCode}</a></td>
+              <td><a href={url.longUrl} target="_blank" rel="noopener noreferrer">{url.urlCode}</a></td>
               <td>{url.longUrl}</td>
               <td>{new Date(url.date).toLocaleDateString()}</td>
               <td>{url.clicks}</td>

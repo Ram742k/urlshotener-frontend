@@ -54,7 +54,7 @@ const CreateShortUrl = () => {
                     shortUrl && (
                         <div className='mt-5'>
                             Short URL:{' '}
-                                   <b> <a href={shortUrl} target="_blank" rel="noopener noreferrer">
+                                   <b> <a href={longUrl} target="_blank" rel="noopener noreferrer">
                                         {urlCode}
                                     </a></b>
                         </div>
